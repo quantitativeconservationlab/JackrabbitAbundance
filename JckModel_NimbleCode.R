@@ -209,9 +209,9 @@ CMCMC <- compileNimble(RMCMC, mod)
 start <- Sys.time()
 
 samps <- runMCMC(CMCMC$RMCMC,
-                 niter = 1000000,
-                 nburnin = 400000,
-                 thin = 100,
+                 niter = 150000,
+                 nburnin = 75000,
+                 thin = 25,
                  nchains = 3,
                  samplesAsCodaMCMC = TRUE)
 
